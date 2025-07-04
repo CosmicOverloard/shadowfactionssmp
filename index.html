@@ -27,6 +27,40 @@
   a.discord-btn:hover {
     background: #00cc77;
   }
+  form {
+    margin-top: 40px;
+    background: #222;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+  }
+  form label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+  }
+  form input[type="text"],
+  form input[type="email"],
+  form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: none;
+    font-size: 1em;
+  }
+  form button {
+    background: #00ff99;
+    color: #000;
+    font-weight: bold;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  form button:hover {
+    background: #00cc77;
+  }
 </style>
 </head>
 <body>
@@ -43,6 +77,30 @@
 <p>IP: ShadowFactionSMP.mc.gg</p>
 
 <a href="https://discord.gg/8aNRW4XKXB" target="_blank" class="discord-btn">Join Discord</a>
+
+<!-- Staff Application Form -->
+<h2 style="margin-top: 50px;">Staff Application</h2>
+<form action="https://formspree.io/f/mvgrnojg" method="POST">
+  <label for="username">Minecraft Username:</label>
+  <input type="text" id="username" name="username" required />
+
+  <label for="email">Your Email:</label>
+  <input type="email" id="email" name="_replyto" required />
+
+  <label for="experience">Why do you want to be staff?</label>
+  <textarea id="experience" name="experience" rows="5" required></textarea>
+
+<label for="experience">What do you think qualfies you to be staff?</label>
+  <textarea id="experience" name="experience" rows="5" required></textarea>
+
+<label for="experience">How old are you?</label>
+  <textarea id="experience" name="experience" rows="5" required></textarea>
+
+<label for="experience">Why should we pick you?</label>
+  <textarea id="experience" name="experience" rows="5" required></textarea>
+
+  <button type="submit">Submit Application</button>
+</form>
 
 </body>
 </html>
