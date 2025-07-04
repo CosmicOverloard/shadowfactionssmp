@@ -1,37 +1,48 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>ShadowFaction SMP</title>
-  <style>
-    body {
-      background: #1e1e1e;
-      color: white;
-      text-align: center;
-      font-family: sans-serif;
-      padding: 50px;
-    }
-    h1 {
-      color: #00ff99;
-      font-size: 48px;
-    }
-    a {
-      display: inline-block;
-      margin: 10px;
-      padding: 10px 20px;
-      background: #00ff99;
-      color: black;
-      text-decoration: none;
-      border-radius: 8px;
-    }
-    a:hover {
-      background: #00cc77;
-    }
-  </style>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>My Minecraft Server</title>
+<style>
+  body { background: #121212; color: #fff; font-family: sans-serif; padding: 20px; }
+  nav a {
+    color: #00ff99;
+    text-decoration: none;
+    margin-right: 15px;
+    font-weight: bold;
+  }
+  nav a:hover { color: #00cc77; }
+  img.banner {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  a.discord-btn {
+    display: inline-block;
+    background:#00ff99; color:#000; padding:10px 20px; text-decoration:none; border-radius:8px;
+    font-weight: bold;
+    margin-top: 20px;
+  }
+  a.discord-btn:hover {
+    background: #00cc77;
+  }
+</style>
 </head>
 <body>
-  <h1>Welcome to the ShadowFaction SMP website</h1>
-  <p>IP: play.yourdomain.com</p>
-  <a href="https://discord.gg/8aNRW4XKXB">Join Discord</a>
+
+<nav>
+  <a href="index.html">Home</a> |
+  <a href="plugins.html">Plugins</a>
+</nav>
+
+<!-- You can replace banner.png with your uploaded banner image -->
+<img src="banner.png" alt="Server Banner" class="banner" />
+
+<h1>Welcome to My Minecraft Server!</h1>
+<p>IP: play.yourdomain.com</p>
+
+<a href="https://discord.gg/8aNRW4XKXB" target="_blank" class="discord-btn">Join Discord</a>
+
 </body>
 </html>
