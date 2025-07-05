@@ -3,16 +3,26 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Apply - ShadowFaction SMPr</title>
+  <title>Apply - ShadowFaction SMP</title>
   <style>
-    body { background: #121212; color: #fff; font-family: sans-serif; padding: 20px; }
+    body {
+      background: #121212;
+      color: #fff;
+      font-family: sans-serif;
+      padding: 20px;
+    }
+
     nav a {
       color: #00ff99;
       text-decoration: none;
       margin-right: 15px;
       font-weight: bold;
     }
-    nav a:hover { color: #00cc77; }
+
+    nav a:hover {
+      color: #00cc77;
+    }
+
     form {
       margin-top: 40px;
       background: #222;
@@ -20,11 +30,13 @@
       border-radius: 10px;
       max-width: 600px;
     }
+
     form label {
       display: block;
       margin-bottom: 6px;
       font-weight: bold;
     }
+
     form input[type="text"],
     form input[type="email"],
     form textarea {
@@ -35,6 +47,7 @@
       border: none;
       font-size: 1em;
     }
+
     form button {
       background: #00ff99;
       color: #000;
@@ -44,8 +57,13 @@
       border-radius: 8px;
       cursor: pointer;
     }
+
     form button:hover {
       background: #00cc77;
+    }
+
+    h1 {
+      color: #00ff99;
     }
   </style>
 </head>
@@ -54,30 +72,31 @@
 <nav>
   <a href="index.html">Home</a> |
   <a href="plugins.html">Plugins</a> |
-  <a href="apply.html">Apply</a>
+  <a href="apply.html">Apply</a> |
+  <a href="rules.html">Rules</a>
 </nav>
 
 <h1>Staff Application</h1>
 <p>Fill out the form below to apply for staff on ShadowFaction SMP.</p>
 
 <form action="https://formspree.io/f/mvgrnojg" method="POST">
-  <label for="value1">Minecraft Username:</label>
-  <input type="text" id="value1" name="value1" required />
+  <label for="username">Minecraft Username:</label>
+  <input type="text" id="username" name="username" required />
 
-  <label for="value2">Your Email:</label>
-  <input type="email" id="value2" name="value2" required />
+  <label for="email">Your Email:</label>
+  <input type="email" id="email" name="_replyto" required />
 
-  <label for="value3">Why do you want to be staff?</label>
-  <textarea id="value3" name="value3" rows="5" required></textarea>
+  <label for="why_staff">Why do you want to be staff?</label>
+  <textarea id="why_staff" name="why_staff" rows="5" required></textarea>
 
-  <label for="value4">What qualifies you to be staff?</label>
-  <textarea id="value4" name="value4" rows="5" required></textarea>
+  <label for="qualifications">What qualifies you to be staff?</label>
+  <textarea id="qualifications" name="qualifications" rows="5" required></textarea>
 
-  <label for="value5">Why should we choose you?</label>
-  <textarea id="value5" name="value5" rows="5" required></textarea>
+  <label for="why_you">Why should we choose you?</label>
+  <textarea id="why_you" name="why_you" rows="5" required></textarea>
 
-  <label for="value6">How old are you?</label>
-  <textarea id="value6" name="value6" rows="2" required></textarea>
+  <label for="age">How old are you?</label>
+  <input type="text" id="age" name="age" required />
 
   <button type="submit">Submit Application</button>
 </form>
