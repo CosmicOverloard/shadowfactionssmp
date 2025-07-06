@@ -2,50 +2,105 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>ShadowFaction SMP</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Shadow Factions SMP</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
   <style>
-    body { background: #121212; color: #fff; font-family: sans-serif; padding: 20px; }
-    nav a {
-      color: #00ff99;
-      text-decoration: none;
-      margin-right: 15px;
-      font-weight: bold;
+    body {
+      margin: 0;
+      font-family: 'Orbitron', sans-serif;
+      background-color: #1e1e1e;
+      color: #f0f0f0;
     }
-    nav a:hover { color: #00cc77; }
-    img.banner {
-      max-width: 100%;
-      height: auto;
+
+    header {
+      background-color: #222;
+      padding: 20px;
+      text-align: center;
+      border-bottom: 2px solid #0f0;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      color: #0f0;
+    }
+
+    nav {
+      background-color: #111;
+      display: flex;
+      justify-content: center;
+      padding: 10px 0;
+      border-bottom: 1px solid #333;
+    }
+
+    nav a {
+      color: #ccc;
+      text-decoration: none;
+      margin: 0 20px;
+      font-size: 1rem;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #0f0;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+      text-align: center;
+    }
+
+    main h2 {
+      font-size: 2rem;
       margin-bottom: 20px;
     }
-    a.discord-btn {
-      display: inline-block;
-      background:#00ff99; color:#000; padding:10px 20px; text-decoration:none; border-radius:8px;
-      font-weight: bold; margin-top: 20px;
+
+    footer {
+      background-color: #111;
+      text-align: center;
+      padding: 20px;
+      color: #777;
+      margin-top: 40px;
+      font-size: 0.9rem;
     }
-    a.discord-btn:hover {
-      background: #00cc77;
+
+    @media (max-width: 600px) {
+      nav {
+        flex-direction: column;
+      }
+
+      nav a {
+        margin: 10px 0;
+      }
     }
   </style>
 </head>
 <body>
 
-<nav>
-  <a href="index.html">Home</a> |
-  <a href="plugins.html">Plugins</a> |
-  <a href="apply.html">Apply</a> |
-  <a href="rules.html">Rules</a>
-  <a href="gallery.html">Apply</a>
-</nav>
+  <header>
+    <h1>Shadow Factions SMP</h1>
+  </header>
 
-<img src="raw (1).png" alt="Server Banner" class="banner" />
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="rules.html">Rules</a>
+    <a href="about.html">About</a>
+    <a href="gallery.html">Gallery</a>
+  </nav>
 
-<h1>Welcome to the ShadowFaction SMP website</h1>
-<p><strong>IP (Java):</strong> ShadowFactionSMP.mc.gg<br>
-<strong>IP (Bedrock):</strong> [ShadowFactionSMP.mc.gg]<br>
-<strong>Port:</strong> [19132]</p>
+  <main>
+    <h2>Welcome to Shadow Factions SMP!</h2>
+    <p>Join the ultimate Minecraft SMP experience where strategy, alliances, and battles shape the world.</p>
+    <p>Explore factions, take part in events, and rise to power.</p>
+    <p>Server IP: <strong>your.server.ip</strong></p>
+  </main>
 
-<a href="https://discord.gg/8aNRW4XKXB" target="_blank" class="discord-btn">Join Discord</a>
+  <footer>
+    &copy; 2025 Shadow Factions SMP. All rights reserved.
+  </footer>
 
 </body>
 </html>
