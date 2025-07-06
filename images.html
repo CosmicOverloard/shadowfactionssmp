@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Gallery - ShadowFaction SMP</title>
+  <style>
+    body {
+      background: #121212;
+      color: #fff;
+      font-family: sans-serif;
+      padding: 20px;
+    }
+    nav a {
+      color: #00ff99;
+      text-decoration: none;
+      margin-right: 15px;
+      font-weight: bold;
+    }
+    nav a:hover {
+      color: #00cc77;
+    }
+    h1 {
+      color: #00ff99;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 15px;
+      margin-top: 30px;
+    }
+    .gallery img {
+      width: 100%;
+      border-radius: 10px;
+      border: 2px solid #00ff99;
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html">Home</a> |
+  <a href="plugins.html">Plugins</a> |
+  <a href="apply.html">Apply</a> |
+  <a href="rules.html">Rules</a> |
+  <a href="images.html">Gallery</a>
+</nav>
+
+<h1>Server Gallery</h1>
+<p>Check out some awesome screenshots and previews from ShadowFaction SMP!</p>
+
+<div class="gallery">
+  <img src="images/base1.png" alt="Faction Base" />
+  <img src="images/fight1.png" alt="PvP Battle" />
+  <img src="images/hub.png" alt="Spawn Hub" />
+  <img src="images/event.png" alt="Event Area" />
+  <!-- Add more <img> elements as needed -->
+</div>
+
+</body>
+</html>
